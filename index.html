@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+<body>
+
+  <div class="container">
+    <div class="age_card">
+
+      <div class="date">
+        <div id="date">
+          <p for="">DAY</p>
+          <input name="birthday" id="birthday" type="number" min="1" max="31" required>
+        </div>
+        <div>
+          <p for="">MONTH</p>
+          <input name="birthmonth" id="birthmonth" type="number" min="1" max="12" required>
+        </div>
+        <div>
+          <p for="">YEAR</p>
+          <input name="birthyear" id="birthyear" type="number" min="1" max="2023" required>
+        </div>
+      </div>
+
+      <div id="icon" class="icon" onclick="showAge()">
+        <img src="icon-arrow.svg" alt="">
+      </div>
+      
+      <div class="result">
+        <div><label id="years">38</label><h1>years</h1></div>
+        <div><label id="months">3</label><h1>months</h1></div>
+        <div><label id="days">26</label><h1>days</h1></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
