@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(0, 0%, 94%, 1);
+}
+
+.age_card{
+    width: 45%;
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px 20px 200px 20px;
+    padding: 50px;
+}
+
+.date{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(201, 198, 198);
+}
+
+.date div{
+    width: 20%;
+    margin-right: 30px;
+}
+
+.date input{
+    font-size: 20px;
+    padding: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(201, 198, 198);
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.date div p{
+    font-size: 12px;
+    font-family: 'Outfit', sans-serif;
+    color: grey;
+    font-weight: 400i;
+}
+
+.age_card .icon{
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: hsl(259, 100%, 65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.age_card .icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.result{
+    margin-top: 30px;
+}
+
+.result h1{
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 700i;
+}
+
+.result label{
+    font-style: italic;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(259, 100%, 65%);
+}
+
+.result div{
+    display: flex;
+}
+
+.age_card .icon:hover{
+    background: #000;
+}
+
+@media only screen and (max-width:1120px){
+    .date div{
+        width: 30%;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width:930px){
+
+    .age_card{
+        width: 60%;
+    }
+
+    .date div{
+        width: 33%;
+        margin-right: 30px;
+    }
+
+    .age_card .icon{
+        right: 25%;
+    }
+
+}
+
+@media only screen and (max-width:620px){
+    .age_card{
+        width: 90%;
+        height: 70vh;
+    }
+
+    .date div{
+        width: 33%;
+        margin-right: 30px;
+    }
+
+    .age_card .icon{
+        top: 29%;
+        right: 45%;
+    }
+
+    .date div p{
+        font-size: 12px;
+        font-family: 'Outfit', sans-serif;
+        color: grey;
+        font-weight: 400i;
+    }
+
+    .date input{
+        font-size: 18px;
+        padding: 2px;
+    }
+
+    .result h1{
+        font-size: 50px;
+    }
+
+    .result label{
+        font-size: 50px;
+    }
+
+}
+
+/* font-family: 'Outfit', sans-serif;
+font-family: 'Roboto', sans-serif; */
